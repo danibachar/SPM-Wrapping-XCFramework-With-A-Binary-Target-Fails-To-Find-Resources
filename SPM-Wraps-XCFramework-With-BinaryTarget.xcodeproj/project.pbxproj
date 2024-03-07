@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		276432D82B9950C800082591 /* AdsWrapper in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 27920E892B994BD20026C0E3 /* AdsWrapper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		276432DC2B99527F00082591 /* AdsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 276432DB2B99527F00082591 /* AdsWrapper */; };
 		27920E752B994BC00026C0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E742B994BC00026C0E3 /* AppDelegate.swift */; };
 		27920E772B994BC00026C0E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E762B994BC00026C0E3 /* SceneDelegate.swift */; };
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				276432D82B9950C800082591 /* AdsWrapper in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;

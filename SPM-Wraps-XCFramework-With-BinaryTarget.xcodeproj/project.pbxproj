@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276432D82B9950C800082591 /* AdsWrapper in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 27920E892B994BD20026C0E3 /* AdsWrapper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		276432DC2B99527F00082591 /* AdsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 276432DB2B99527F00082591 /* AdsWrapper */; };
 		27920E752B994BC00026C0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E742B994BC00026C0E3 /* AppDelegate.swift */; };
 		27920E772B994BC00026C0E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E762B994BC00026C0E3 /* SceneDelegate.swift */; };
 		27920E792B994BC00026C0E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E782B994BC00026C0E3 /* ViewController.swift */; };
@@ -15,6 +17,20 @@
 		27920E812B994BC10026C0E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27920E802B994BC10026C0E3 /* Base */; };
 		27920E8A2B994BD20026C0E3 /* AdsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 27920E892B994BD20026C0E3 /* AdsWrapper */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		276432D92B9950C800082591 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				276432D82B9950C800082591 /* AdsWrapper in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27920E712B994BC00026C0E3 /* SPM-Wraps-XCFramework-With-BinaryTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPM-Wraps-XCFramework-With-BinaryTarget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27920E8A2B994BD20026C0E3 /* AdsWrapper in Frameworks */,
+				276432DC2B99527F00082591 /* AdsWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 				27920E6D2B994BC00026C0E3 /* Sources */,
 				27920E6E2B994BC00026C0E3 /* Frameworks */,
 				27920E6F2B994BC00026C0E3 /* Resources */,
+				276432D92B9950C800082591 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -87,6 +105,7 @@
 			name = "SPM-Wraps-XCFramework-With-BinaryTarget";
 			packageProductDependencies = (
 				27920E892B994BD20026C0E3 /* AdsWrapper */,
+				276432DB2B99527F00082591 /* AdsWrapper */,
 			);
 			productName = "SPM-Wraps-XCFramework-With-BinaryTarget";
 			productReference = 27920E712B994BC00026C0E3 /* SPM-Wraps-XCFramework-With-BinaryTarget.app */;
@@ -117,7 +136,7 @@
 			);
 			mainGroup = 27920E682B994BC00026C0E3;
 			packageReferences = (
-				27920E882B994BD20026C0E3 /* XCLocalSwiftPackageReference "../Tuist-SPM-With-Binary-Target-Wrapping-XCFramework/LocalPackage" */,
+				276432DA2B99527F00082591 /* XCLocalSwiftPackageReference "LocalPackage" */,
 			);
 			productRefGroup = 27920E722B994BC00026C0E3 /* Products */;
 			projectDirPath = "";
@@ -296,11 +315,13 @@
 		27920E862B994BC10026C0E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PT8CRKKZ9;
+				DEVELOPMENT_TEAM = LYWVWF962T;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SPM-Wraps-XCFramework-With-BinaryTarget/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -308,6 +329,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,11 +346,13 @@
 		27920E872B994BC10026C0E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PT8CRKKZ9;
+				DEVELOPMENT_TEAM = LYWVWF962T;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SPM-Wraps-XCFramework-With-BinaryTarget/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -336,6 +360,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,13 +398,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		27920E882B994BD20026C0E3 /* XCLocalSwiftPackageReference "../Tuist-SPM-With-Binary-Target-Wrapping-XCFramework/LocalPackage" */ = {
+		276432DA2B99527F00082591 /* XCLocalSwiftPackageReference "LocalPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Tuist-SPM-With-Binary-Target-Wrapping-XCFramework/LocalPackage";
+			relativePath = LocalPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		276432DB2B99527F00082591 /* AdsWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdsWrapper;
+		};
 		27920E892B994BD20026C0E3 /* AdsWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AdsWrapper;

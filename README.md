@@ -8,7 +8,8 @@ Reroduce steps
 4) Run the app
 5) See the following error, where the plist of the xcframework wrapped by SPM cannot be found
 
-Runtime error
+Runtime error:
+
 ![Screenshot 2024-03-06 at 6 22 10 PM](https://github.com/danibachar/SPM-Wrapping-XCFramework-With-A-Binary-Target-Fails-To-Find-Resources/assets/6380777/d71f6836-82ce-40af-b031-61fe6f26e8e0)
 
 
